@@ -1,0 +1,9 @@
+function is_similar = isInputSimilarToProjNormals(input_normals, proj_normals, dot_th)
+
+    %==== TODO: Output a boolean matrix which represents if each corresponding point normals are similar enough given dot_th ====    
+    % Write your code here...
+    dot_sum=sum(input_normals.*proj_normals,3);
+    is_similar=logical(dot_th<dot_sum);   
+
+end
+    
